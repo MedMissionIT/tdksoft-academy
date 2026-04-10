@@ -146,4 +146,13 @@ Professional decoupled architecture using **FastAPI** (Backend) and **Clean HTML
 3. Run: \`cd backend && python -m app.main\`
 EOF
 
+# --- BACKEND: Requirements ---
+cat <<EOF > backend/requirements.txt
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic[email]==2.5.3
+python-multipart==0.0.6
+email-validator==2.1.0.post1
+EOF
+
 echo "Project TDK Soft Consulting generated successfully!"

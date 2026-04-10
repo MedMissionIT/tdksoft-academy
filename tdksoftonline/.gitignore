@@ -5,6 +5,7 @@ __pycache__/
 .venv/
 env/
 .env
+venv/
 
 # Web
 node_modules/
