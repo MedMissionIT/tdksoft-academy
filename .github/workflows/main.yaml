@@ -3,8 +3,8 @@ name: CI/CD Pipeline TDK Soft
 # Technical documentation:
 # This workflow automates the build, push, and deployment process 
 # for TDK Soft Consulting. It targets a k3s cluster on a remote VPS.
+# Docker images are deployed on my Docker Hub account with username tdksoft341 and a PAT as password.
 # Standards: Google Cloud Native CI/CD best practices.
-
 on:
   push:
     branches: [ "main", "develop" ]
