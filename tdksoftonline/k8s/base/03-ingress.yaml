@@ -11,6 +11,7 @@ spec:
   tls:
     - hosts:
         - academy.tdksoftconsulting.de
+      secretName: academy-tls-cert
   rules:
     - host: academy.tdksoftconsulting.de
       http:
