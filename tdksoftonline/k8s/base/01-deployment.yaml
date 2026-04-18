@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tdk-backend
+  namespace: academy
 spec:
   replicas: 1
   selector:
@@ -13,7 +14,10 @@ spec:
         app: tdk-site
     spec:
       containers:
-      - name: backend 
-        image: python:3.10-slim # Temporary Image, ill be replace by the CI
+      - name: backend
+        image: tdksoft341/tdkacademy-backend:latest
         ports:
         - containerPort: 8000
+        nv:
+        - name: PYTHONUNBUFFERED
+          value: "1"
